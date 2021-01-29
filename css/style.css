@@ -1,0 +1,182 @@
+/* Fonts*/
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PTSans.woff2) format("woff2"), url(../fonts/PTSans.woff) format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/PTSans-Bold.woff2) format("woff2"), url(../fonts/PTSans-Bold.woff) format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --base-color-text: #000000;
+  --base-color: #ffffff;
+  --base-button: #81B3D2;
+  --focus-button: #669EC0;
+  --activate-button: #5496BD;
+  --alternative-button: #766357;
+  --alternative-focus: #604E43;
+  --alternative-activate: #503E33;
+  --second-features-color: #eeeeee;
+}
+
+.page-body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--base-color-text);
+  text-transform: uppercase;
+  background-color: var(--base-color);
+}
+
+/* Main navigation*/
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-item a {
+  text-decoration: none;
+  color: var(--base-color-text);
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.navigation-item a:hover, .navigation-item a:focus {
+  color: var(--base-button);
+}
+
+.navigation-item a:active {
+  color: var(--base-color-text);
+  opacity: 0.3;
+}
+
+.navigation-item a:not([href]) {
+  color: var(--alternative-button);
+}
+
+/* Comtent */
+
+.full-logo {
+  background-color: var(--base-button);
+}
+
+.slogan {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.features-list, .subfeatures-list {
+  list-style: none;
+}
+
+.features-item {
+  text-align: center;
+}
+
+.features-item h3 {
+  font-size: 21px;
+}
+
+.illustrated-item {
+  color: var(--base-color);
+  background-color: var(--base-button);
+}
+
+.no-illustrated-item {
+  background-color: var(--second-features-color);
+}
+
+.subfeatures-item {
+  text-align: center;
+}
+
+.subfeatures-item h4 {
+  font-size: 21px;
+}
+
+.question {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.motivate {
+  line-height: 24px;
+}
+
+.search-button {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--base-color);
+  background-color: var(--alternative-button)
+}
+
+.search-button:hover, .search-button:focus {
+  background-color: var(--alternative-focus);
+}
+
+.search-button:active {
+  background-color: var(--alternative-activate);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Footer*/
+
+.footer-contacts {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.footer-contacts-phone {
+  text-decoration: none;
+  color: var(--base-color-text);
+}
+
+.footer-contacts-phone:hover, .footer-contacts-phone:focus {
+  color: var(--base-button);
+}
+
+.footer-contacts-phone:active {
+  color: var(--base-color-text);
+  opacity: 0.3;
+}
+
+.list-social {
+  list-style: none;
+}
+
+.social-button {
+  background-color: var(--base-button);
+}
+
+.social-button:hover, .social-button:focus {
+  background-color: var(--focus-button);
+}
+
+.social-button:active {
+  background-color: var(--activate-button);
+}
+
+.footer-copyright {
+  line-height: 26px;
+}
