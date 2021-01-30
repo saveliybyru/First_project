@@ -64,7 +64,7 @@
   opacity: 0.3;
 }
 
-.navigation-item .navigation-link:not([href]) {
+.navigation-item-active {
   color: var(--alternative-button);
 }
 
