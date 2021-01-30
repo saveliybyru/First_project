@@ -20,14 +20,20 @@
 
 :root {
   --base-color-text: #000000;
-  --base-color: #ffffff;
+  --base-color: #FFFFFF;
   --base-button: #81B3D2;
   --focus-button: #669EC0;
   --activate-button: #5496BD;
   --alternative-button: #766357;
   --alternative-focus: #604E43;
   --alternative-activate: #503E33;
-  --second-features-color: #eeeeee;
+  --second-features-color: #EEEEEE;
+}
+
+/* Global styles*/
+
+.clear-list {
+  list-style: none;
 }
 
 .page-body {
@@ -42,31 +48,27 @@
 
 /* Main navigation*/
 
-.navigation-list {
-  list-style: none;
-}
-
-.navigation-item a {
+.navigation-item .navigation-link {
   text-decoration: none;
   color: var(--base-color-text);
   font-weight: 700;
   line-height: 26px;
 }
 
-.navigation-item a:hover, .navigation-item a:focus {
+.navigation-item .navigation-link:hover, .navigation-item .navigation-link:focus {
   color: var(--base-button);
 }
 
-.navigation-item a:active {
+.navigation-item .navigation-link:active {
   color: var(--base-color-text);
   opacity: 0.3;
 }
 
-.navigation-item a:not([href]) {
+.navigation-item .navigation-link:not([href]) {
   color: var(--alternative-button);
 }
 
-/* Comtent */
+/* Content */
 
 .full-logo {
   background-color: var(--base-button);
@@ -77,10 +79,6 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-}
-
-.features-list, .subfeatures-list {
-  list-style: none;
 }
 
 .features-item {
@@ -159,10 +157,6 @@
 .footer-contacts-phone:active {
   color: var(--base-color-text);
   opacity: 0.3;
-}
-
-.list-social {
-  list-style: none;
 }
 
 .social-button {
