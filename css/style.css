@@ -244,6 +244,12 @@
   color: var(--base-color);
 }
 
+.catalog-filter-form{
+  display: grid;
+  grid-template-columns: 250px 250px max-content;
+  column-gap: 73px;
+}
+
 .filter-type {
   font-size: 16px;
 }
@@ -261,6 +267,9 @@
   text-transform: uppercase;
   color: var(--base-color);
   background-color: transparent;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  justify-self: center;
 }
 
 .filter-button:hover, .filter-button:focus {
@@ -274,6 +283,17 @@
   color: var(--base-clicked-text);
   text-decoration-style: dotted;
   text-decoration-color: var(--base-button);
+}
+
+.variable-sorting{
+  margin-left: 120px;
+  display: grid;
+  grid-template-columns: 250px 1fr max-content;
+}
+.sorting-name{
+  font-size: 12px;
+line-height: 18px;
+font-weight: 400;
 }
 
 .sorting-style .sorting-item:focus, .sorting-style .sorting-item:hover {
@@ -292,6 +312,7 @@
   color: var(--base-button);
 }
 
+
 .range .range-item {
   color: var(--controls-base);
 }
@@ -308,6 +329,11 @@
   color: var(--base-button);
 }
 
+.hotel-block{
+  display: grid;
+  grid-template-columns: 135px 1fr 120px;
+}
+
 .hotel-name {
   font-size: 21px;
   line-height: 26px;
@@ -315,12 +341,17 @@
   text-decoration: none;
 }
 
+
 .hotel-name:hover, .hotel-name:focus {
   color: var(--base-button);
 }
 
 .hotel-name:active {
   color: var(--base-clicked-text);
+}
+
+.hotel-name h3{
+  margin-top: 0px;
 }
 
 .hotel-user-rating {
