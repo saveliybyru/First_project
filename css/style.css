@@ -259,6 +259,12 @@
   column-gap: 73px;
 }
 
+.filter-infrastructure fieldset, .filter-type-object fieldset, .filter-price fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .filter-type {
   font-size: 16px;
 }
@@ -286,24 +292,30 @@
   background-color: var(--base-color);
 }
 
-.sorting-style .sorting-item {
-  font-size: 12px;
-  line-height: 18px;
-  color: var(--base-clicked-text);
-  text-decoration-style: dotted;
-  text-decoration-color: var(--base-button);
-}
-
 .variable-sorting {
   margin-left: 120px;
-  display: grid;
-  grid-template-columns: 250px 1fr max-content;
+  display: flex;
+  align-items: center;
 }
 
 .sorting-name {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  margin-right: 40px;
+}
+
+.sorting {
+  display: flex;
+}
+
+.sorting-style .sorting-item {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--base-clicked-text);
+  text-decoration-style: dotted;
+  text-decoration-color: var(--base-button);
+  margin-right: 32px;
 }
 
 .sorting-style .sorting-item:focus, .sorting-style .sorting-item:hover {
@@ -320,6 +332,10 @@
 .sorting-style .sorting-item-active {
   text-decoration: none;
   color: var(--base-button);
+}
+
+.range {
+  display: flex;
 }
 
 .range .range-item {
@@ -359,7 +375,7 @@
 }
 
 .hotel-name h3 {
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .hotel-user-rating {
@@ -367,11 +383,16 @@
   background-color: var(--rating-background);
 }
 
+.activities-button {
+  display: flex;
+}
+
 .hotel-info {
   background-color: var(--base-button);
   color: var(--base-color);
   text-decoration: none;
   font-weight: 700;
+  margin-right: 6px;
 }
 
 .hotel-info:hover, .hotel-info:focus {
