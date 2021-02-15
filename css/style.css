@@ -275,7 +275,7 @@
   bottom: 29px;
   width: 75px;
   height: 72px;
-  background-image: url("/img/interface-icon/icon-house.svg");
+  background-image: url("../img/interface-icon/icon-house.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -287,7 +287,7 @@
   bottom: 29px;
   width: 75px;
   height: 70px;
-  background-image: url("/img/interface-icon/icon-burger.svg");
+  background-image: url("../img/interface-icon/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -299,7 +299,7 @@
   bottom: 29px;
   width: 64px;
   height: 77px;
-  background-image: url("/img/interface-icon/icon-gift.svg");
+  background-image: url("../img/interface-icon/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
