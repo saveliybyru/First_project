@@ -135,6 +135,7 @@
 .navigation-item-active {
   color: var(--alternative-button);
   font-weight: 700;
+}
 
 .short-logo {
   position: absolute;
