@@ -34,9 +34,13 @@
   --controls-alternative: #BDBBBC;
   --controls-disabled: #6A6A6A;
   --controls-accent: #ABABAB;
+  --controls-subaccent:#EBEBEB;
+  --button-accent:#A9A9A9;
   --rating-text: #666666;
   --rating-background: #F2F2F2;
   --semi-transparent-text: rgba(255, 255, 255, 0.3);
+  --base-shadow:rgba(0, 1, 1, 0.2);
+  --shadow-popup: rgba(0, 1, 1, 0.15);
   --secondary-accent: #E5E5E5;
 }
 
@@ -58,7 +62,7 @@
   margin: 0 auto;
   padding: 0 0;
   background-color: var(--base-color);
-  box-shadow: 0 5px 15px rgb(0 1 1 / 20%);
+  box-shadow: 0 5px 15px var(--base-shadow);
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -326,6 +330,7 @@
 .search-hotel {
   display: grid;
   justify-self: center;
+  position: relative;
 }
 
 .question {
@@ -357,13 +362,204 @@
   height: 86px;
 }
 
-.search-button:hover, .search-button:focus {
+.search-button:hover,
+.search-button:focus {
   background-color: var(--alternative-focus);
 }
 
 .search-button:active {
   background-color: var(--alternative-activate);
   color: var(--semi-transparent-text);
+}
+
+
+
+.search-hotel-popup {
+  position: absolute;
+  top: 291px;
+  width: 568px;
+  height: 395px;
+  background-color: var(--base-color);
+  box-shadow: 0px 7px 15px var(--shadow-popup);
+}
+
+.search-form {
+  padding: 54px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search-item {
+  position: relative;
+  height: 38px;
+  margin-bottom: 30px;
+  margin-left: 2px;
+}
+
+.search-item label {
+  font-weight: 700;
+  margin-right: 16px;
+}
+
+.search-item input {
+  height: 38px;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 3px;
+  background-color:var(--rating-background);
+  margin: 0;
+  padding: 0;
+}
+
+.arrival-date label{
+  margin-right: 20px;
+}
+
+.arrival-date input,
+.departure-date input{
+  width: 334px;
+  padding-left: 12px;
+}
+
+.arrival-date input:hover,
+.departure-date input:hover {
+  background-color: var(--controls-subaccent);
+}
+
+.arrival-date input:focus,
+.departure-date input:focus {
+  width:330px;
+  height: 34px;
+  outline: none;
+  border:2px solid var(--secondary-accent);
+  background-color: var(--base-color);
+}
+
+
+
+.adult-guest input,
+.children-guest input{
+  width: 22px;
+  padding-left: 16px;
+}
+
+.adult-guest input:hover,
+.children-guest input:hover {
+  background-color: var(--controls-subaccent);
+}
+
+.adult-guest input:focus,
+.children-guest input:focus {
+  width:18px;
+  height: 34px;
+  outline: none;
+  border:2px solid var(--secondary-accent);
+  background-color: var(--base-color);
+}
+
+.calendar{
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  width: 21px;
+  height: 23px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.calendar svg{
+  fill:var(--button-accent);
+}
+
+.calendar:hover svg,
+.calendar:focus svg{
+  fill:var(--base-color-text);
+}
+
+.calendar:active svg{
+  fill:var(--base-button);
+}
+
+.adult-guest,
+.children-guest{
+  display: flex;
+  align-items: center;
+}
+
+.adult-guest label{
+  margin-right: 38px;
+}
+.children-guest label{
+  margin-right: 28px;
+}
+
+.button-minus,
+.button-plus{
+  width: 38px;
+  height: 38px;
+  background-color: var(--rating-background);
+  border: none;
+  position: relative;
+}
+
+
+
+.button-minus::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  top: 18px;
+  left: 13px;
+  background-color: var(--button-accent);
+}
+
+.button-minus:hover::after,
+.button-minus:focus::after{
+  background-color: var(--base-color-text);
+}
+.button-minus:active::after{
+  background-color: var(--base-button);
+}
+
+.button-plus svg{
+  fill:var(--button-accent);
+}
+
+.button-plus:hover svg,
+.button-plus:focus svg{
+  fill:var(--base-color-text);
+}
+
+.button-plus:active svg{
+  fill: var(--base-button);
+}
+
+.search-button-hotel {
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--base-color);
+  background-color: var(--base-button);
+  border: none;
+  width: 458px;
+  height: 58px;
+  margin-top: 24px;
+}
+
+.search-button-hotel:hover,
+.search-button-hotel:focus {
+  background-color: var(--focus-button);
+}
+
+.search-button-hotel:active {
+  color: var(--semi-transparent-text);
+  background-color: var(--activate-button);
 }
 
 /* Catalog content*/
