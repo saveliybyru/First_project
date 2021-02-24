@@ -419,7 +419,7 @@
 
 .arrival-date input,
 .departure-date input {
-  width: 334px;
+  width: 332px;
   padding-left: 12px;
 }
 
@@ -430,7 +430,7 @@
 
 .arrival-date input:focus,
 .departure-date input:focus {
-  width: 330px;
+  width: 328px;
   height: 34px;
   outline: none;
   border: 2px solid var(--secondary-accent);
