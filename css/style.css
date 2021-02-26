@@ -2,8 +2,7 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url(../fonts/PTSans.woff2) format("woff2"),
-    url(../fonts/PTSans.woff) format("woff");
+  src: url(../fonts/PTSans.woff2) format("woff2"), url(../fonts/PTSans.woff) format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -11,8 +10,7 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url(../fonts/PTSans-Bold.woff2) format("woff2"),
-    url(../fonts/PTSans-Bold.woff) format("woff");
+  src: url(../fonts/PTSans-Bold.woff2) format("woff2"), url(../fonts/PTSans-Bold.woff) format("woff");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -380,7 +378,7 @@
   width: 568px;
   height: 395px;
   background-color: var(--base-color);
-  box-shadow: 0px 7px 15px var(--shadow-popup);
+  box-shadow: 0 7px 15px var(--shadow-popup);
 }
 
 .search-form {
@@ -490,6 +488,7 @@
 .adult-guest label {
   margin-right: 38px;
 }
+
 .children-guest label {
   margin-right: 28px;
 }
@@ -517,6 +516,7 @@
 .button-minus:focus::after {
   background-color: var(--base-color-text);
 }
+
 .button-minus:active::after {
   background-color: var(--base-button);
 }
@@ -1000,6 +1000,11 @@
 .rent-button:active {
   background-color: var(--alternative-activate);
   color: var(--semi-transparent-text);
+}
+
+.blank-words {
+  text-align: center;
+  padding: 350px;
 }
 
 /* Footer*/
