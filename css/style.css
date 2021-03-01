@@ -464,8 +464,10 @@
 
 .arrival-date input,
 .departure-date input {
-  width: 332px;
+  width: 328px;
+  height: 34px;
   padding-left: 12px;
+  border: 2px solid transparent;
 }
 
 .arrival-date input:hover,
@@ -475,17 +477,17 @@
 
 .arrival-date input:focus,
 .departure-date input:focus {
-  width: 328px;
-  height: 34px;
   outline: none;
-  border: 2px solid var(--secondary-accent);
+  border-color: var(--secondary-accent);
   background-color: var(--base-color);
 }
 
 .adult-guest input,
 .children-guest input {
-  width: 22px;
+  width: 18px;
+  height: 34px;
   padding-left: 16px;
+  border: 2px solid transparent;
 }
 
 .adult-guest input:hover,
@@ -495,10 +497,8 @@
 
 .adult-guest input:focus,
 .children-guest input:focus {
-  width: 18px;
-  height: 34px;
   outline: none;
-  border: 2px solid var(--secondary-accent);
+  border-color: var(--secondary-accent);
   background-color: var(--base-color);
 }
 
@@ -579,6 +579,13 @@
 
 .button-plus:active svg {
   fill: var(--base-button);
+}
+
+.arrival-date input::placeholder,
+.departure-date input::placeholder,
+.adult-guest input::placeholder,
+.children-guest input::placeholder{
+  color: var(--base-color-text);
 }
 
 .search-button-hotel {
