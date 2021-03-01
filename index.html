@@ -8,7 +8,7 @@
   <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -121,11 +121,13 @@
         <button class="search-button" type="button">
           Поиск гостиницы в Седоне
         </button>
-        <div class="search-hotel-popup">
+      </section>
+      <section class="location">
+        <div class="search-hotel-popup close-popup">
           <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
             <div class="search-item arrival-date">
               <label for="arrival-date-form">Дата заезда:</label>
-              <input type="text" name="arrival-date" id="arrival-date-form" value="24 апреля 2017">
+              <input type="text" name="arrival-date" id="arrival-date-form" value="24 апреля 2017" placeholder="24 апреля 2017">
               <button class="calendar" type="button" aria-label="Указать дату заезда">
                 <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -137,7 +139,7 @@
             </div>
             <div class="search-item departure-date">
               <label for="departure-date">Дата выезда:</label>
-              <input type="text" name="departure-date" id="departure-date-form" value="4 июля 2017">
+              <input type="text" name="departure-date" id="departure-date-form" value="4 июля 2017" placeholder="4 июля 2017">
               <button class="calendar" type="button" aria-label="Указать дату выезда">
                 <svg width="21" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -150,7 +152,7 @@
             <div class="search-item adult-guest">
               <label for="adult-guest-form">Взрослые:</label>
               <button class="button-minus" type="button" aria-label="Уменьшить количество взрослых"></button>
-              <input type="text" name="adult-guest" id="adult-guest-form" value="2">
+              <input type="text" name="adult-guest" id="adult-guest-form" value="2" placeholder="2">
               <button class="button-plus" type="button" aria-label="Увеличить количество взрослых">
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -161,7 +163,7 @@
             <div class="search-item children-guest">
               <label for="children-guest-form">Дети:</label>
               <button class="button-minus" type="button" aria-label="Уменьшить количество детей"></button>
-              <input type="text" name="children-guest" id="children-guest-form" value="0">
+              <input type="text" name="children-guest" id="children-guest-form" value="0" placeholder="0">
               <button class="button-plus" type="button" aria-label="Увеличить количество детей">
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -172,8 +174,6 @@
             <input class="search-button-hotel" type="submit" value="Найти" aria-label="Найти подходящую гостиницу">
           </form>
         </div>
-      </section>
-      <section>
         <h2 class="visually-hidden">Как до нас добраться?</h2>
         <img src="img/map.png" width="1200" height="594" alt="Расположение на карте">
       </section>
@@ -228,6 +228,7 @@
       </p>
     </footer>
   </div>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

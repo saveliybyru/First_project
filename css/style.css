@@ -330,7 +330,6 @@
 .search-hotel {
   display: grid;
   justify-self: center;
-  position: relative;
 }
 
 .question {
@@ -372,9 +371,57 @@
   color: var(--semi-transparent-text);
 }
 
+.location{
+  position:relative;
+  overflow: hidden;
+}
+
+@keyframes swipe{
+  0% {
+    transform: translateY(-395px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.show-popup{
+  animation-name: swipe;
+  animation-duration: 1s;
+}
+
+@keyframes reverse-swipe{
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-395px);
+  }
+}
+
+.close-popup{
+  transform: translateY(-395px);
+  animation-name: reverse-swipe;
+  animation-duration: 1s;
+}
+
+@keyframes error{
+  0%, 34%, 68%, 100%{
+    transform: translateY(0);
+  }
+  17%, 51%, 84% {
+    transform: translateY(-10px);
+  }
+}
+.error-popup{
+  animation-name: error;
+  animation-duration: 0.4s;
+}
+
+
 .search-hotel-popup {
   position: absolute;
-  top: 291px;
+  left: 316px;
   width: 568px;
   height: 395px;
   background-color: var(--base-color);
