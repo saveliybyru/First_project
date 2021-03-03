@@ -374,6 +374,7 @@
 .location{
   position:relative;
   overflow: hidden;
+  height: 594px;
 }
 
 @keyframes swipe{
@@ -610,6 +611,10 @@
 .search-button-hotel:active {
   color: var(--semi-transparent-text);
   background-color: var(--activate-button);
+}
+
+.light-map{
+  z-index: -2;
 }
 
 /* Catalog content*/
