@@ -853,6 +853,7 @@
   color: var(--base-clicked-text);
   text-decoration-style: dotted;
   text-decoration-color: var(--base-button);
+  text-underline-offset: 4px;
   margin-right: 33px;
 }
 
@@ -1078,7 +1079,7 @@
 .location-footer {
   background-color: var(--base-color);
   opacity: 0.9;
-  margin-top: -127px;
+  margin-top: -120px;
 }
 
 .footer-contacts {
