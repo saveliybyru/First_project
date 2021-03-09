@@ -14,6 +14,7 @@ try {
   isStorageSupport = false;
 }
 
+popup.classList.add("close-popup");
 
 opener.addEventListener("click", function (event) {
   event.preventDefault();
