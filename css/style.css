@@ -203,7 +203,7 @@
 .features-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 256px 330px 256px 256px;
+  grid-template-rows: minmax(256px, max-content) minmax(256px, max-content) minmax(256px, max-content);
 }
 
 .features-item {
@@ -244,8 +244,8 @@
 }
 
 .item2 {
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 4;
   display: grid;
@@ -253,22 +253,22 @@
 }
 
 .item3 {
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 
 .item4 {
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
 .item5 {
-  grid-row-start: 4;
-  grid-row-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 3;
   grid-column-end: 4;
 }
@@ -276,7 +276,7 @@
 .subfeatures-list {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 330px;
+  grid-template-rows: minmax(330px, max-content);
 }
 
 .subfeatures-item {
@@ -620,8 +620,9 @@
 /* Catalog content*/
 
 .catalog-filter {
+  display: flex;
   width: 1056px;
-  height: 217px;
+  min-height: 217px;
   background-image: url(../img/background-catalog.jpg);
   background-color: var(--activate-button);
   color: var(--base-color);
