@@ -113,6 +113,7 @@
 }
 
 .navigation-item {
+  font-weight: 700;
   padding-top: 15px;
   padding-bottom: 15px;
   width: 228px;
@@ -130,7 +131,6 @@
 .navigation-item .navigation-link {
   text-decoration: none;
   color: var(--base-color-text);
-  font-weight: 700;
   line-height: 26px;
 }
 
@@ -146,11 +146,8 @@
 
 .navigation-item-active {
   color: var(--alternative-button);
-  font-weight: 700;
   padding-top: 17px;
   padding-bottom: 13px;
-  width: 228px;
-  text-align: right;
 }
 
 .short-logo {
@@ -617,6 +614,24 @@
   z-index: -2;
 }
 
+/*Map content*/
+
+.map-heading{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.map-general{
+  position:relative;
+  overflow: hidden;
+  height: 800px;
+}
+
+.light-map-general{
+  z-index: -2;
+}
+
 /* Catalog content*/
 
 .catalog-filter {
@@ -635,7 +650,6 @@
   grid-template-columns: 250px 250px max-content;
   column-gap: 73px;
   padding-top: 26px;
-  padding-bottom: 32px;
 }
 
 .catalog-filter-form fieldset {
@@ -1066,7 +1080,7 @@
 
 .blank-words {
   text-align: center;
-  padding: 350px;
+  padding: 100px;
 }
 
 /* Footer*/
